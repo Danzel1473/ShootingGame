@@ -30,6 +30,7 @@ void Laser::onTrigger(GameObject* other)
 	if (tag == "적기")
 	{
 		//폭발
+		instantiate(new LaserExp(getPx()-14, getPy()));
 
 		//제거
 		destroy(this);
